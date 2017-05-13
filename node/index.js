@@ -14,7 +14,7 @@ const load = proto => {
 }
 
 module.exports = {
-  loadService: proto => load(path.join('service', proto).service),
-  loadSync: proto => load(path.join('sync', proto).sync),
+  loadService: proto => load(path.join('service', proto)).service,
+  loadSync: proto => load(path.join('sync', proto)).sync,
   load: load
 };
