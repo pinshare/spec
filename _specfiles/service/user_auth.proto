@@ -5,7 +5,7 @@ import "response_user.proto";
 package service;
 
 service AuthUser {
-    rpc Auth (UserAuthRequest) returns (UserResponse) {}
+    rpc execute (UserAuthRequest) returns (UserResponse) {}
 }
 
 message UserAuthRequest {
