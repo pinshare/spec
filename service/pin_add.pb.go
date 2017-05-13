@@ -11,6 +11,7 @@ It is generated from these files:
 	pin_update.proto
 	response_pin.proto
 	response_user.proto
+	user_auth.proto
 	user_get.proto
 
 It has these top-level messages:
@@ -20,6 +21,7 @@ It has these top-level messages:
 	UpdateRequest
 	PinResponse
 	UserResponse
+	UserAuthRequest
 	UserIdRequest
 	UserTokenRequest
 */

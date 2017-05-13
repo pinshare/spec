@@ -25,7 +25,7 @@ type UserIdRequest struct {
 func (m *UserIdRequest) Reset()                    { *m = UserIdRequest{} }
 func (m *UserIdRequest) String() string            { return proto.CompactTextString(m) }
 func (*UserIdRequest) ProtoMessage()               {}
-func (*UserIdRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*UserIdRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
 func (m *UserIdRequest) GetId() int32 {
 	if m != nil {
@@ -41,7 +41,7 @@ type UserTokenRequest struct {
 func (m *UserTokenRequest) Reset()                    { *m = UserTokenRequest{} }
 func (m *UserTokenRequest) String() string            { return proto.CompactTextString(m) }
 func (*UserTokenRequest) ProtoMessage()               {}
-func (*UserTokenRequest) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
+func (*UserTokenRequest) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
 func (m *UserTokenRequest) GetToken() string {
 	if m != nil {
@@ -160,9 +160,9 @@ var _GetUser_serviceDesc = grpc.ServiceDesc{
 	Metadata: "user_get.proto",
 }
 
-func init() { proto.RegisterFile("user_get.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("user_get.proto", fileDescriptor6) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor6 = []byte{
 	// 179 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0xe2, 0x2b, 0x2d, 0x4e, 0x2d,
 	0x8a, 0x4f, 0x4f, 0x2d, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x62, 0x2f, 0x4e, 0x2d, 0x2a,

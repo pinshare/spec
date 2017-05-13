@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "response_user.proto";
+
+package service;
+
+service AuthUser {
+    rpc Auth (UserAuthRequest) returns (UserResponse) {}
+}
+
+message UserAuthRequest {
+    string github_id = 1;
+    string github_name = 2;
+    string github_token = 3;
+    string github_profile_icon_url = 4;
+}
