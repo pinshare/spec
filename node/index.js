@@ -10,11 +10,11 @@ const load = proto => {
   if (!fs.existsSync(filePath)) {
     throw new Error(`${filename} is not exists in spec files.`);
   }
-  return grpc.load(filePath).spec;
+  return grpc.load(filePath);
 }
 
 module.exports = {
-  loadService: proto => load(path.join('service', proto)),
-  loadSync: proto => load(path.join('sync', proto)),
+  loadService: proto => load(path.join('service', proto).service),
+  loadSync: proto => load(path.join('sync', proto).sync),
   load: load
 };
